@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>数独游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Sudoku Next</h1>
+        <div id="sudoku-grid">
+            <!-- 重复 81 次 -->
+            <div class="grid-cell"><input type="text" maxlength="1"></div>
+            <!-- ... -->
+        </div>
+        <div id="controls">
+            <button id="new-game" onclick="window.location.reload();">New Game</button>
+            <div id="difficulty-container">
+                <label for="difficulty">Difficulty:</label>
+                <select id="difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+        </div>
+        <div id="number-chooser">
+            <!-- 数字按钮将在这里生成 -->
+        </div>
+        <div id="action-buttons">
+            <button>Undo</button>
+            <button>Erase</button>
+            <button>Hint</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
